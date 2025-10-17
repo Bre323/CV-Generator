@@ -1,4 +1,7 @@
-# React + Vite
+# CV-Generator
+ - It generates a curriculum based on the information given. Developed with React.
+
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
