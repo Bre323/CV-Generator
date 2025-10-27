@@ -9,6 +9,7 @@ aside {
   width: 350px;
   padding: 0 50px;
   background-color: #303030;
+  overflow: scroll;
 }
 
 aside > h1 {
