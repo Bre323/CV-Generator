@@ -21,6 +21,7 @@ aside > h1 {
   padding: 10px 25px 25px;
   border-radius: 25px;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .header-info > button {
@@ -39,4 +40,39 @@ aside > h1 {
   border: none;
   width: 80%;
   height: 15px;
+}
+
+.start-date {
+  margin-bottom: 15px;
+}
+
+.end-date {
+  margin-bottom: 20px;
+}
+
+.start-date,
+.end-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.start-date > input,
+.end-date > input {
+  border-radius: 25px;
+  border: none;
+  height: 25px;
+  padding: 5px 15px;
+}
+
+.form-group > #description {
+  margin-bottom: 25px;
+  height: 200px;
+  width: 75%;
+  border-radius: 25px;
+  border: none;
+  resize: none;
+  padding: 15px;
+  line-height: 1.25rem;
 }
