@@ -90,12 +90,12 @@ function Editor() {
         <div className="form-group">
           <div className="start-date">
             <label htmlFor="start-date">Start Date</label>
-            <input type="date" name='start-date' id='start-date' />
+            <input type="date" name='job-start-date' id='job-start-date' />
           </div>
 
           <div className="end-date">
             <label htmlFor="end-date">End Date</label>
-            <input type="date" name="end-date" id="end-date" />
+            <input type="date" name="job-end-date" id="job-end-date" />
           </div>
         </div>
 

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Editor from './components/editor'
+import Preview from './components/preview'
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <Editor />
+      <Preview />
     </>
   )
 }
