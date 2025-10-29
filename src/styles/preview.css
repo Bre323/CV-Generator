@@ -1,5 +1,53 @@
+main * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 main > .curriculum {
   height: 90vh;
   width: 700px;
   background-color: aliceblue;
+  padding: 15px;
+  overflow: scroll;
+  color: black;
+}
+
+.personal-info > h1 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.personal-info > .info {
+  font-size: 0.9rem;
+}
+
+.info > p {
+  margin: 0;
+}
+
+.education-info,
+.experience-info {
+  text-align: start;
+  margin: 30px 0 0 20px;
+}
+
+.education-info > h2,
+.experience-info > h2 {
+  margin-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+
+.education-item,
+.experience-item {
+  margin-bottom: 15px;
+}
+
+.education-item > p,
+.experience-item > p {
+  font-size: 0.9rem;
+}
+
+li {
+  list-style-type: none;
 }
