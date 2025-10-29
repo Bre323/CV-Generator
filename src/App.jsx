@@ -4,23 +4,22 @@ import Preview from './components/preview'
 import './App.css'
 
 function App() {
-  const [fullName, setFullName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [address, setAddress] = useState('');
+  const [personalInfo, setPersonalInfo] = useState({});
   const [education, setEducation] = useState([]);
   const [experience, setExperience] = useState([]);
 
   const handlePersonalInfo = () => {
-    let fullNameValue = document.querySelector('#name').value;
-    let emailValue = document.querySelector('#email').value;
-    let phoneValue = document.querySelector('#phone').value;
-    let addressValue = document.querySelector('#address').value;
+    let fullName = document.querySelector('#name').value;
+    let email = document.querySelector('#email').value;
+    let phone = document.querySelector('#phone').value;
+    let address = document.querySelector('#address').value;
 
-    setFullName(fullNameValue);
-    setEmail(emailValue);
-    setPhone(phoneValue);
-    setAddress(addressValue);
+    setPersonalInfo({
+      fullName,
+      email,
+      phone,
+      address
+    });
   }
 
   const handleEducation = () => {
