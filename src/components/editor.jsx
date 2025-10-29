@@ -1,6 +1,6 @@
 import '../styles/editor.css';
 
-function Editor() {
+function Editor({ handlePersonalInfo, handleEducation, handleExperience }) {
   return (
     <aside>
       <h1>CV Generator</h1>
@@ -28,7 +28,7 @@ function Editor() {
           <input type="text" name='address' id='address' />
         </div>
 
-        <button type='submit'>Save</button>
+        <button type='submit' onClick={handlePersonalInfo}>Save</button>
       </section>
 
       <section className="header-info">
@@ -66,7 +66,7 @@ function Editor() {
           </div>
         </div>
 
-        <button type='submit'>Add</button>
+        <button type='submit' onClick={handleEducation}>Add</button>
       </section>
 
       <section className="header-info">
@@ -99,7 +99,7 @@ function Editor() {
           </div>
         </div>
 
-        <button type='submit'>Add</button>
+        <button type='submit' onClick={handleExperience}>Add</button>
       </section>
     </aside>
   )
