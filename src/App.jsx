@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import Editor from './components/editor'
 import Preview from './components/preview'
+import PersonalInfo from './components/personalInfo';
+import EducationInfo from './components/educationInfo';
 import './App.css'
+
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState({});
@@ -35,8 +38,7 @@ function App() {
       {
         school,
         degree,
-        city,
-        country,
+        location: `${city}, ${country}`,
         period: `${startDate} to ${endDate}`,
       },
     ]);
@@ -67,9 +69,12 @@ function App() {
         handleEducation={handleEducation}
         handleExperience={handleExperience}
       />
-      <Preview {...personalInfo}/>
+      <Preview>
+        <PersonalInfo {...personalInfo} />
+        <EducationInfo education={education} />
+      </Preview>
     </>
   )
 }
 
-export default App
+export default App;

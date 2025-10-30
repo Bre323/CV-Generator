@@ -1,11 +1,10 @@
 import '../styles/preview.css';
-import PersonalInfo from './personalInfo';
 
-function Preview(props) {
+function Preview({ children }) {
   return (
     <main>
       <div className='curriculum'>
-        <PersonalInfo {...props} />
+        {children}
         {/*
         <div className='personal-info'>
           <h1>Breno Pena Rocha</h1>
