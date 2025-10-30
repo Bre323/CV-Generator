@@ -5,9 +5,9 @@ function ExperienceInfo({ experience }) {
         <h2>Professional Experience</h2>
         <ul>
           {
-            experience.map(item => {
+            experience.map((item, index) => {
               return (
-                <li className='experience-item'>
+                <li className='experience-item' key={`${index}`}>
                   <h3>{item.jobTitle}</h3>
                   <p>{item.company}</p>
                   <p>{item.period}</p>

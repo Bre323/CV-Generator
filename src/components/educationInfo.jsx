@@ -3,20 +3,20 @@ function EducationInfo({ education }) {
     return (
       <div className="education-info">
         <h2>Education</h2> 
-          <ul>
-            {
-              education.map(item => {
-                return (
-                  <li className='education-item'>
-                    <h3>{item.school}</h3>
-                    <p>{item.degree}</p>
-                    <p>{item.location}</p>
-                    <p>{item.period}</p>
-                  </li>
-                );
-              })
-            }
-          </ul>
+        <ul>
+          {
+            education.map((item, index) => {
+              return (
+                <li className='education-item' key={`${index}`}>
+                  <h3>{item.school}</h3>
+                  <p>{item.degree}</p>
+                  <p>{item.location}</p>
+                  <p>{item.period}</p>
+                </li>
+              );
+            })
+          }
+        </ul>
       </div>
     );
   }
