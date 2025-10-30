@@ -4,6 +4,7 @@ import Preview from './components/preview'
 import PersonalInfo from './components/personalInfo';
 import EducationInfo from './components/educationInfo';
 import './App.css'
+import ExperienceInfo from './components/experienceInfo';
 
 
 function App() {
@@ -56,8 +57,8 @@ function App() {
       {
         jobTitle,
         company,
-        description,
         period: `${jobStartDate} to ${jobEndDate}`,
+        description,
       },
     ]);
   }
@@ -72,6 +73,7 @@ function App() {
       <Preview>
         <PersonalInfo {...personalInfo} />
         <EducationInfo education={education} />
+        <ExperienceInfo experience={experience} />
       </Preview>
     </>
   )
