@@ -1,6 +1,9 @@
 import '../styles/editor.css';
 
-function Editor({ handlePersonalInfo, handleEducation, handleExperience }) {
+function Editor({ 
+  handlePersonalInfo, handleEducation, handleExperience, 
+  clearPersonalInfo, clearEducation, clearExperience 
+}) {
   return (
     <aside>
       <h1>CV Generator</h1>
@@ -28,7 +31,10 @@ function Editor({ handlePersonalInfo, handleEducation, handleExperience }) {
           <input type="text" name='address' id='address' />
         </div>
 
-        <button type='submit' onClick={handlePersonalInfo}>Save</button>
+        <div className="buttons">
+          <button type='submit' onClick={handlePersonalInfo}>Save</button>
+          <button onClick={clearPersonalInfo}>Clear</button>
+        </div>
       </section>
 
       <section className="header-info">
@@ -66,7 +72,10 @@ function Editor({ handlePersonalInfo, handleEducation, handleExperience }) {
           </div>
         </div>
 
-        <button type='submit' onClick={handleEducation}>Add</button>
+        <div className="buttons">
+          <button type='submit' onClick={handleEducation}>Add</button>
+          <button onClick={clearEducation}>Clear Entries</button>
+        </div>
       </section>
 
       <section className="header-info">
@@ -99,7 +108,10 @@ function Editor({ handlePersonalInfo, handleEducation, handleExperience }) {
           </div>
         </div>
 
-        <button type='submit' onClick={handleExperience}>Add</button>
+        <div className="buttons">
+          <button type='submit' onClick={handleExperience}>Add</button>
+          <button onClick={clearExperience}>Clear Entries</button>
+        </div>
       </section>
     </aside>
   )

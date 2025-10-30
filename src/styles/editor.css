@@ -76,3 +76,9 @@ aside > h1 {
   padding: 15px;
   line-height: 1.25rem;
 }
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}

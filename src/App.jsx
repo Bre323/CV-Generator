@@ -12,6 +12,17 @@ function App() {
   const [education, setEducation] = useState([]);
   const [experience, setExperience] = useState([]);
 
+  const clearPersonalInfo = () => {
+    setPersonalInfo({});
+  }
+  const clearEducation = () => {
+    setEducation([]);
+  }
+
+  const clearExperience = () => {
+    setExperience([]);
+  }
+
   const handlePersonalInfo = () => {
     let fullName = document.querySelector('#name').value;
     let email = document.querySelector('#email').value;
@@ -69,6 +80,9 @@ function App() {
         handlePersonalInfo={handlePersonalInfo}
         handleEducation={handleEducation}
         handleExperience={handleExperience}
+        clearPersonalInfo={clearPersonalInfo}
+        clearEducation={clearEducation}
+        clearExperience={clearExperience}
       />
       <Preview>
         <PersonalInfo {...personalInfo} />
