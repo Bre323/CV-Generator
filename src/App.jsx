@@ -67,7 +67,7 @@ function App() {
         handleEducation={handleEducation}
         handleExperience={handleExperience}
       />
-      <Preview />
+      <Preview {...personalInfo}/>
     </>
   )
 }

@@ -1,9 +1,12 @@
 import '../styles/preview.css';
+import PersonalInfo from './personalInfo';
 
-function Preview() {
+function Preview(props) {
   return (
     <main>
       <div className='curriculum'>
+        <PersonalInfo {...props} />
+        {/*
         <div className='personal-info'>
           <h1>Breno Pena Rocha</h1>
           <div className="info">
@@ -58,6 +61,7 @@ function Preview() {
             </li>
           </ul>
         </div>
+        */}
       </div>
     </main>
   )
